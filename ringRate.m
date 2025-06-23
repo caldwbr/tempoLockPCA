@@ -72,3 +72,20 @@ grid on;
 % === Overall Title ===
 sgtitle(sprintf('Ring Dynamics from 25–205 Seconds (%s Tempo = %.2f Hz / %.1f BPM)', ...
     songName, songTempoHz, songTempoBPM));
+
+
+fprintf('\n===== %s (11–288 sec) =====\n', songName);
+fprintf('🎵 Song Tempo: %.2f Hz | %.1f BPM | %.0f ms\n', songTempoHz, songTempoBPM, songPeriodMs);
+
+fprintf('\n📈 Ring Frequency:\n');
+fprintf('  Mean: %.3f Hz\n', avgHz);
+fprintf('  Std Dev: %.3f Hz\n', stdHz);
+
+fprintf('\n🌀 Ring Period:\n');
+fprintf('  Mean: %.1f ms\n', avgPeriod);
+fprintf('  Std Dev: %.1f ms\n', stdPeriod);
+
+fprintf('\n💨 Tracer Velocity:\n');
+fprintf('  Mean: %.2f a.u./s\n', avgVel);
+fprintf('  Std Dev: %.2f a.u./s\n', stdVel);
+fprintf('===============================\n');
