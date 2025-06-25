@@ -7,7 +7,7 @@ sigmaMs = 200;
 timePoints = size(ampEnvelopeAll, 1);
 numChannels = size(ampEnvelopeAll, 2);
 numFreqs = size(ampEnvelopeAll, 3);
-frequencies = evalin('base', 'freqs_01');  % <--- Use actual frequency values
+%frequencies = evalin('base', 'freqs_01');  % <--- Use actual frequency values
 
 coarseIdx = round(linspace(1, timePoints, nCoarse));
 gaussWin = exp(-0.5 * ((-halfWin+1):(halfWin))'.^2 / sigmaMs^2);
